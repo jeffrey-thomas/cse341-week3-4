@@ -28,6 +28,7 @@ export const booksController = {
   },
 
   getByIsbn: async (req,res)=> {
+    //#swagger.tags=['Books']
     const isbn = req.params.isbn;
     const result = await mongo.db("cse341").collection("books").find({isbn:isbn});
     result.toArray().then((books) => {
