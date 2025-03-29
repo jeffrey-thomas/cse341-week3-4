@@ -6,7 +6,7 @@
     "version": "1.0.0",
     "description": ""
   },
-  "host": "https://cse341-week3-4-3ob0.onrender.com/",
+  "host": "https://cse341-week3-4-3ob0.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
@@ -21,6 +21,16 @@
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      }
+    },
+    "/api-docs": {
+      "get": {
+        "description": "",
+        "responses": {
+          "default": {
+            "description": ""
           }
         }
       }
@@ -193,6 +203,9 @@
     },
     "/books/isbn/{isbn}": {
       "get": {
+        "tags": [
+          "Books"
+        ],
         "description": "",
         "produces": [
           "application/json"
