@@ -6,10 +6,10 @@
     "version": "1.0.0",
     "description": ""
   },
-  "host": "localhost:3000",
+  "host": "https://cse341-week3-4-3ob0.onrender.com/",
   "basePath": "/",
   "schemes": [
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
@@ -91,6 +91,9 @@
           "204": {
             "description": "No Content"
           },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -167,6 +170,9 @@
           "204": {
             "description": "No Content"
           },
+          "422": {
+            "description": "Unprocessable Entity"
+          },
           "500": {
             "description": "Internal Server Error"
           }
@@ -197,9 +203,6 @@
     },
     "/books/isbn/{isbn}": {
       "get": {
-        "tags": [
-          "Books"
-        ],
         "description": "",
         "produces": [
           "application/json"
@@ -259,6 +262,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
@@ -320,6 +326,9 @@
         "responses": {
           "204": {
             "description": "No Content"
+          },
+          "422": {
+            "description": "Unprocessable Entity"
           },
           "500": {
             "description": "Internal Server Error"
